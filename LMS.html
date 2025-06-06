@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Portal for Students | @teamUmang</title>
+  <link rel="stylesheet" href="LMS.css">
+</head>
+<body>
+ 
+  <div id="head">
+  <h1 class="sub-title">Student Management</h1>
+
+  <div class="container">
+    <h1 class="std-mng">Student Management</h1>
+    <div class="form-container">
+      <input type="text" id="name" placeholder="Student Name">
+      <input type="text" id="age" placeholder="Age">
+      <input type="text" id="grade" placeholder="Grade">
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+    
+    <div id="student-list" class="student-list">
+      <h2 class="std-list"><u>Student List</u></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+          <!-- Students will be added here dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+  <script src="LMS.js"></script>
+</body>
+</html>
